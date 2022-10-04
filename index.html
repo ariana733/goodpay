@@ -101,6 +101,10 @@
                           aria-describedby="inputGroup-sizing-lg"
                         />
                       </div>
+                      <div class="d-flex flex-column mb-3">
+                        <span class="badge bg-success d-flex justify-content-center mb-3"><h6 id="captcha" class="m-2"></h6></span>
+                        <input id="input-captcha" type="text" class="form-control input-group-lg" placeholder="Digite o Resultado da Soma" required>
+                      </div>
                       <div class="d-grid gap-2">
                         <button id="btnEntrar" class="btn btn-outline-success" type="button">
                           Entrar
@@ -378,6 +382,32 @@
           <div class="modal-body">Um erro aconteceu</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="erroCaptcha"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" id="erroCaptcha">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Erro de Capctha</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Resultado da soma incorreto!</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Fechar</button>
           </div>
         </div>
       </div>
