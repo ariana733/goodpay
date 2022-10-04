@@ -4,8 +4,8 @@
  */
 import usuarios from "./moduloDados.js";
 
-const btnEntrar = document.getElementById("btnEntrar");
-const alertaLogin = new bootstrap.Modal("#alertaLogin");
+
+const btnEntrar = document.getElementById("btnEntrar")
 
 const alertaCaptcha = new bootstrap.Modal("#erroCaptcha");
 const spanCaptcha = document.getElementById("captcha");
