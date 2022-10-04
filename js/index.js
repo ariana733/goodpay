@@ -60,3 +60,9 @@ function geradorNumeros(){
 
     return captcha
 }
+
+const btnRecuperar = document.getElementById('btnRecuperar')
+
+btnRecuperar.addEventListener('click', () => {
+    window.location.pathname = '/recuperacaoDeSenha.html'
+})
