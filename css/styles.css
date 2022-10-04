@@ -10,11 +10,11 @@
     --gradient: linear-gradient(180deg, rgba(130,197,24,1) 0%, rgba(218,211,13,1) 100%);
 }
 
-header, footer{
+/*header, footer{
     background-color: #82C518;
     height: 55px;
     text-align: center;
-}
+}*/
 
 
 .titulo-faq {
@@ -104,8 +104,8 @@ header, footer{
 }
 
 #myFooter .btn {
-    color: black;
-    background-color: #4bd86e;
+    color: rgb(255, 255, 255);
+    background-color: #008037;
     border-radius: 20px;
     border: none;
     width: 150px;
@@ -146,3 +146,26 @@ body{
    -webkit-flex: 0 0 auto;
 }
 
+.mapaSite{
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    color: black;
+    
+ }
+  .mapaTitulo {
+    padding-top: 10px;
+}
+  
+  .conteudoDoMapa a{
+    color: #555353;
+    text-decoration: none;
+    padding-left: 15px;
+    
+  }
+  
+  .conteudoDoMapa a:hover {
+    text-decoration: none;
+    color: #4bd86e;
+  }
