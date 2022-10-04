@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stylesCadastroColaborador.css">
+    <title>Cadastro Colaborador - GoodPay</title>
+</head>
+
+<body>
+    <main>
+        <section class="container-xl mt-5">
+            <h2>Cadastro Colaborador</h2>
+            <h5 class="mb-4">Insira as informações abaixo:</h5>
+            <form class="row g-3 needs-validation was-validated" novalidate>
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" minlength="5" required>
+                    <div class="valid-feedback">Nome ok!</div>
+                    <div class="invalid-feedback">Preencha o nome corretamente.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Insira um email válido.</div>
+                        <div class="valid-feedback">Email ok!</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="tel" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="tel" minlength="11" required
+                        placeholder="(00) 00000-0000">
+                    <div class="valid-feedback">
+                        Telefone ok!
+                    </div>
+                    <div class="invalid-feedback">Insira um telefone válido.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="espec" class="form-label">Especialidade</label>
+                    <select class="form-select" id="espec" required>
+                        <option selected disabled value="">Selecione Uma Especialidade</option>
+                        <option value="1">Desenvolvedor Front-End</option>
+                        <option value="2">Desenvolvedor Back-End</option>
+                        <option value="3">Desenvolvedor Mobile</option>
+                        <option value="4">UX Designer</option>
+                        <option value="5">Outras</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Selecione uma Opção
+                    </div>
+                    <div class="valid-feedback">
+                        Especialidade ok!
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="comentario" class="form-label">Comentário</label>
+                    <textarea type="text" class="form-control" id="comentario" required minlength="30"
+                        placeholder="Comentário pessoal sobre o porquê de estar se tornando colaborador"></textarea>
+                    <div class="invalid-feedback">Mínimo 30 Caracteres</div>
+                </div>
+
+
+                <div class="col-12 mb-5">
+                    <button id="botaoEnviar" class="botao-primary" type="button">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="modal fade" id="alertaCadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro Efetuado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">Solicitação de cadastro enviada com sucesso!</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Início</h5>
+                    <ul>
+                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="">SoulCode</a></li>
+                        <li><a href="">Cadastro de Colaborador</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Serviços</h5>
+                    <ul>
+                        <li><a href="">Aplicativo</a></li>
+                        <li><a href="">E-bank</a></li>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Parceiros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Recuperar Senha</a></li>
+                        <li><a href="">Privacidade e Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">
+                        <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Copyright - Soulcode Academy</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    
+    <script src="./js/cadastroColaborador.js"></script>
+</body>
+
+</html>
