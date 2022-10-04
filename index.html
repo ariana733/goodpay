@@ -17,7 +17,6 @@
     <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-  </head>
   <body>
     <header>
       <nav class="navbar bg-light">
@@ -504,6 +503,7 @@
         </div>
       </div>
     </div>
+
     <footer id="myFooter">
       <div class="container">
         <div class="row">
@@ -516,6 +516,7 @@
               <li><a href="">Quem Somos</a></li>
               <li><a href="">SoulCode</a></li>
               <li><a href="">Cadastro de Colaborador</a></li>
+              <li><a href="mapadosite.html">Mapa do site</a></li>
             </ul>
           </div>
           <div class="col-sm-2">
@@ -531,7 +532,7 @@
           <div class="col-sm-2">
             <h5>Suporte</h5>
             <ul>
-              <li><a href="">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="">Recuperar Senha</a></li>
               <li><a href="">Privacidade e Termos de Uso</a></li>
             </ul>
@@ -540,6 +541,20 @@
             <a href="">
               <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
             </a>
+            <button type="button" class="btn btn-primary" id="liveToastBtn"><strong>Onde Estamos?</strong></button>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+               <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <div id="img-toast">
+                    <img src="img/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay Toast" width="30px">
+                  </div>
+                  <strong class="me-auto">Onde Estamos?</strong>
+                  <small>agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="geolocation" class="toast-body"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
