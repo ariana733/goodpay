@@ -5,16 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css">
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+  
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+  
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+  
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+  
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  
+  
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+  </head>
 </head>
 <body>
-    
     <header>
         <nav class="navbar bg-light">
           <div class="container-fluid">
@@ -204,41 +259,56 @@
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#62CD3C" />
+        </svg>
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Nossa Missão - Trazer a melhor experiência sustentável de investimentos com cashback </h1>
+            <p>No Goodpay, nossa missão é tornar o mundo dos investimentos um lugar mais verde. Mais investimentos,
+              maior retorno, e principalmente, tudo de forma limpa e sustentável. Sempre preocupados com o futuro do
+              nosso planeta, todo investimento na Goodpay é voltado para causas ambientais</p>
+              <p><a class="btn btn-lg btn-success" href="#valores">Conheça nossos valores.</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#6A9751" />
+        </svg>
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>Nossa visão</h1>
+            <p>Na GoodPay nossa aplicação de cashback é focada em ASG (Agenda de Matriz Sustentavel) com o intuito de
+              reduzir o volume de dinheiro impresso e transformar em renda para micro comunidades de empreendimento
+              ambiental. Assim, tanto o planeta quanto o seu investimento saem ganhando</p>
+              <p><a class="btn btn-lg btn-success" href="#visoes">Saiba mais sobre nossa visão.</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#82C518" />
+        </svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Planejamento para levar no bolso</h1>
+            <p>Com o App do GoodPay, nunca foi tão fácil fazer seu dinheiro render. Nós sabemos que planejar e gastar
+              bem são necessárias para quem deseja um investimento seguro e financeiramente saudável.</p>
+              <p><a class="btn btn-lg btn-success" href="index.html">Comece já o seu investimento</a></p>
           </div>
         </div>
       </div>
@@ -261,33 +331,29 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div id="valores" class="row">
       <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
-        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="../goodpay/img/valores/chain.png" alt="">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/3062/3062103.png" alt="">
+
+        <h2 class="fw-normal">Confiança</h2>
+       
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/2352/2352167.png" alt="">
+
+        <h2 class="fw-normal">Co-prosperidade</h2>
+
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/3798/3798610.png" alt="">
 
         <h2 class="fw-normal">Liberdade</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
        
       </div>
       <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/4378/4378289.png" alt="">
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-       
-      </div>
-      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-       
-      </div>
-      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <h2 class="fw-normal">Sustentabilidade</h2>
        
       </div>
       
@@ -298,7 +364,7 @@
 
      <hr class="featurette-divider">
 
-     <div class="row featurette">
+     <div id="visoes" class="row featurette">
        <div class="col-md-7">
          <h2 class="featurette-heading fw-normal lh-1">Certificação</h2>
          <p class="lead">O GoodPay possui a certificação PCI, sigla em inglês para "Padrão de Segurança de Dados para a
@@ -307,7 +373,7 @@
        </div>
        <div class="col-md-5">
          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-           height="500" src="https://assets.pagseguro.com.br/ps-website-assets/v15.95.1/svg/about/index/sobre_ps_1.svg"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_1.png"
            role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false">
          <title>Placeholder</title>
          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
@@ -325,7 +391,7 @@
        </div>
        <div class="col-md-5 order-md-1">
          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-           height="500" src="https://assets.pagseguro.com.br/ps-website-assets/v15.95.1/svg/about/index/sobre_ps_2.svg"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_2.png"
            role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
          <title>Placeholder</title>
          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
@@ -343,7 +409,7 @@
        </div>
        <div class="col-md-5">
          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-           height="500" src="https://assets.pagseguro.com.br/ps-website-assets/v15.95.1/svg/about/index/sobre_ps_3.svg"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_3.png"
            role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
          <title>Placeholder</title>
          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
@@ -404,6 +470,6 @@
     </div>
   </footer>
 </main>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
