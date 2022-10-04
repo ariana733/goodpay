@@ -1,3 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-claro: #82C518;
+    --verde-escuro: #008037;
+    --gradient: linear-gradient(180deg, rgba(130,197,24,1) 0%, rgba(218,211,13,1) 100%);
+}
+
+/*header, footer{
+    background-color: #82C518;
+    height: 55px;
+    text-align: center;
+}*/
+
+
+.titulo-faq {
+    background-color: var(--verde-escuro);
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.container-faq{
+    padding: 35px;
+}
+
+.accordion-button {
+    background-color:  white!important;
+    color: black!important;
+    font-weight: 600;
+}
+
+
 #myFooter {
     background-color: #f8f9fa;
     color: #707070;
@@ -62,8 +104,8 @@
 }
 
 #myFooter .btn {
-    color: black;
-    background-color: #4bd86e;
+    color: rgb(255, 255, 255);
+    background-color: #008037;
     border-radius: 20px;
     border: none;
     width: 150px;
@@ -103,3 +145,86 @@ body{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
 }
+
+/* ------ QUEM SOMOS NÓS  ------ */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.card-pilar{
+  min-height: 200px;
+}
+
+.gp-border-green {
+  border: 1px solid green;
+}
+
+.mapaSite{
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    color: black;
+    
+ }
+  .mapaTitulo {
+    padding-top: 10px;
+}
+  
+  .conteudoDoMapa a{
+    color: #555353;
+    text-decoration: none;
+    padding-left: 15px;
+    
+  }
+  
+  .conteudoDoMapa a:hover {
+    text-decoration: none;
+    color: #4bd86e;
+  }

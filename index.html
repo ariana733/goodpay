@@ -17,7 +17,6 @@
     <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-  </head>
   <body>
     <header>
       <nav class="navbar bg-light">
@@ -120,7 +119,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
@@ -201,11 +200,97 @@
                       </p>
                     </div>
                   </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Ajuda!
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                 #001 - Campo Vazio
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                Os campos não podem estar vazios
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                #002 - Usuário inválido
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                Verifique o nome de usuário e tente novamente ou clique em cadastrar para fazer o cadastro.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                #003 Senha Inválida 
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Senha incorreta, a senha deve conter no mínimo 5 digitos numéricos.                              
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                #004 Numero de Tentativas 
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Você já fez 1 tentativa(s)! Com 3 será redirecionado(a) para recuperar a senha.                              
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                #005 Operação Incorreta 
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Favor verificar a soma dos 2 números e digitar a resposta correta.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </nav>
     </header>
 
@@ -415,6 +500,7 @@
         </div>
       </div>
     </div>
+
     <footer id="myFooter">
       <div class="container">
         <div class="row">
@@ -427,6 +513,7 @@
               <li><a href="">Quem Somos</a></li>
               <li><a href="">SoulCode</a></li>
               <li><a href="">Cadastro de Colaborador</a></li>
+              <li><a href="mapadosite.html">Mapa do site</a></li>
             </ul>
           </div>
           <div class="col-sm-2">
@@ -442,7 +529,7 @@
           <div class="col-sm-2">
             <h5>Suporte</h5>
             <ul>
-              <li><a href="">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="">Recuperar Senha</a></li>
               <li><a href="">Privacidade e Termos de Uso</a></li>
             </ul>
@@ -451,6 +538,20 @@
             <a href="">
               <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
             </a>
+            <button type="button" class="btn btn-primary" id="liveToastBtn"><strong>Onde Estamos?</strong></button>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+               <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <div id="img-toast">
+                    <img src="img/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay Toast" width="30px">
+                  </div>
+                  <strong class="me-auto">Onde Estamos?</strong>
+                  <small>agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="geolocation" class="toast-body"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
