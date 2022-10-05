@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+  
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+  
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+  
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+  
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  
+  
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+  </head>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
+            <a class="navbar-brand" href="#">[money for good]</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <img src="./img/logo/GoodPay.png" width="50" height="50" />
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Busque por algo"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+                <div class="accordion mt-3" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Login Goodpay
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <div class="input-group input-group-lg mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-lg"
+                            >Login</span
+                          >
+                          <input
+                            id="login"
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-lg"
+                            >Senha</span
+                          >
+                          <input
+                            id="senha"
+                            type="password"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <div class="d-grid gap-2">
+                          <button id="btnEntrar" class="btn btn-outline-success" type="button">
+                            Entrar
+                          </button>
+                          <button class="btn btn-outline-dark" type="button">
+                            Cadastrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Developer Team
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h3>
+                          Developer Team
+                          <span class="badge bg-success">JFS5</span>
+                        </h3>
+                        <p>
+                          Este aplicativo não tem conexão com o banco de dados, o
+                          desenvolvimento deste aplicativo tem como finalidade o
+                          aprendizado de aplicações e interface web. Assim o uso
+                          deste aplicativo deve ser pensado como um protótipo não
+                          funcional.
+                        </p>
+                        <p>
+                          A aplicação usa elementos de personalização em Bootstrap
+                          5, com Javascript local, os dados utilizados para e
+                          adicionados neste interface não são enviados a um
+                          serviço.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Soulcode Academy
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Tech For Good: 5 pilares que vão transformar o mundo:
+                          Educação, Diversidade, Saúde, Longevidade e
+                          Sustentabilidade
+                        </p>
+                        <p>
+                          Nossa missão é a formação e o emprego, aplicando os 5
+                          pilares do "Tech For Good". Ser uma escola inclusiva,
+                          que, através de nossa metodologia ágil, possa capacitar
+                          e educar em tecnologia, gerar oportunidades de emprego
+                          para todas as gerações, no início ou na ressignificação
+                          de carreira, com foco em diversidade e equidade. Numa
+                          profissão que fomente o bem-estar físico e mental,
+                          permitindo o equilíbrio entre a vida profissional e
+                          pessoal, através do trabalho remoto, com flexibilidade
+                          de horários, além de ser um negócio sustentável e
+                          responsável, socialmente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+<main>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="liveToast">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#62CD3C" />
+        </svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Nossa Missão - Trazer a melhor experiência sustentável de investimentos com cashback </h1>
+            <p>No Goodpay, nossa missão é tornar o mundo dos investimentos um lugar mais verde. Mais investimentos,
+              maior retorno, e principalmente, tudo de forma limpa e sustentável. Sempre preocupados com o futuro do
+              nosso planeta, todo investimento na Goodpay é voltado para causas ambientais</p>
+              <p><a class="btn btn-lg btn-success" href="#valores">Conheça nossos valores.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#6A9751" />
+        </svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Nossa visão</h1>
+            <p>Na GoodPay nossa aplicação de cashback é focada em ASG (Agenda de Matriz Sustentavel) com o intuito de
+              reduzir o volume de dinheiro impresso e transformar em renda para micro comunidades de empreendimento
+              ambiental. Assim, tanto o planeta quanto o seu investimento saem ganhando</p>
+              <p><a class="btn btn-lg btn-success" href="#visoes">Saiba mais sobre nossa visão.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#82C518" />
+        </svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Planejamento para levar no bolso</h1>
+            <p>Com o App do GoodPay, nunca foi tão fácil fazer seu dinheiro render. Nós sabemos que planejar e gastar
+              bem são necessárias para quem deseja um investimento seguro e financeiramente saudável.</p>
+              <p><a class="btn btn-lg btn-success" href="index.html">Comece já o seu investimento</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="valores" class="row">
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/3062/3062103.png" alt="">
+
+        <h2 class="fw-normal">Confiança</h2>
+       
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/2352/2352167.png" alt="">
+
+        <h2 class="fw-normal">Co-prosperidade</h2>
+
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/3798/3798610.png" alt="">
+
+        <h2 class="fw-normal">Liberdade</h2>
+       
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column card-pilar">
+        <img class="bd-placeholder-img rounded-circle gp-border-green" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/4378/4378289.png" alt="">
+
+        <h2 class="fw-normal">Sustentabilidade</h2>
+       
+      </div>
+      
+    </div><!-- /.row -->
+
+
+     <!-- START THE FEATURETTES -->
+
+     <hr class="featurette-divider">
+
+     <div id="visoes" class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading fw-normal lh-1">Certificação</h2>
+         <p class="lead">O GoodPay possui a certificação PCI, sigla em inglês para "Padrão de Segurança de Dados para a
+           Indústria de Cartões de Pagamento". Os seus dados são guardados em ambiente seguro e criptografados para que
+           ninguém tenha acesso.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_1.png"
+           role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false">
+         <title>Placeholder</title>
+         <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7 order-md-2">
+         <h2 class="featurette-heading fw-normal lh-1">Compras seguras</h2>
+         <p class="lead">Se você comprou online e não recebeu o que foi acordado no momento da compra, o GoodPay te
+           ajuda a resolver. Você tem até 30 dias para acionar a Disputa.</p>
+       </div>
+       <div class="col-md-5 order-md-1">
+         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_2.png"
+           role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+         <title>Placeholder</title>
+         <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading fw-normal lh-1">Análise de risco</h2>
+         <p class="lead">O GoodPay possui uma política de gerenciamento de riscos para evitar fraudes. Quem vende com
+           GoodPay tem uma equipe experiente e qualificada para analisar as suas transações.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+           height="500" src="./img/icones/sobre-nos/sobre_ps_3.png"
+           role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+         <title>Placeholder</title>
+         <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer id="myFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+        </div>
+        <div class="col-sm-2">
+          <h5>Início</h5>
+          <ul>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">SoulCode</a></li>
+            <li><a href="">Cadastro de Colaborador</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="">Aplicativo</a></li>
+            <li><a href="">E-bank</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Parceiros</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Suporte</h5>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Recuperar Senha</a></li>
+            <li><a href="">Privacidade e Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <a href="">
+            <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2022 Copyright - Soulcode Academy</p>
+    </div>
+  </footer>
+</main>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
