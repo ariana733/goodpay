@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stylesCadastroColaborador.css">
+    <title>Cadastro Colaborador - GoodPay</title>
+</head>
+<header>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
+        <a class="navbar-brand" href="#">[money for good]</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img src="./img/logo/GoodPay.png" width="50" height="50" />
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Busque por algo"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Login Goodpay
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="input-group input-group-lg mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-lg"
+                        >Login</span
+                      >
+                      <input
+                        id="login"
+                        type="text"
+                        class="form-control"
+                        aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg"
+                      />
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-lg"
+                        >Senha</span
+                      >
+                      <input
+                        id="senha"
+                        type="password"
+                        class="form-control"
+                        aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg"
+                      />
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                      <span class="badge bg-success d-flex justify-content-center mb-3"><h6 id="captcha" class="m-2"></h6></span>
+                      <input id="input-captcha" type="text" class="form-control input-group-lg" placeholder="Digite o Resultado da Soma" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button id="btnEntrar" class="btn btn-outline-success" type="button">
+                        Entrar
+                      </button>
+                      <button class="btn btn-outline-dark" type="button">
+                        Cadastrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Developer Team
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h3>
+                      Developer Team
+                      <span class="badge bg-success">JFS5</span>
+                    </h3>
+                    <p>
+                      Este aplicativo não tem conexão com o banco de dados, o
+                      desenvolvimento deste aplicativo tem como finalidade o
+                      aprendizado de aplicações e interface web. Assim o uso
+                      deste aplicativo deve ser pensado como um protótipo não
+                      funcional.
+                    </p>
+                    <p>
+                      A aplicação usa elementos de personalização em Bootstrap
+                      5, com Javascript local, os dados utilizados para e
+                      adicionados neste interface não são enviados a um
+                      serviço.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Soulcode Academy
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Tech For Good: 5 pilares que vão transformar o mundo:
+                      Educação, Diversidade, Saúde, Longevidade e
+                      Sustentabilidade
+                    </p>
+                    <p>
+                      Nossa missão é a formação e o emprego, aplicando os 5
+                      pilares do "Tech For Good". Ser uma escola inclusiva,
+                      que, através de nossa metodologia ágil, possa capacitar
+                      e educar em tecnologia, gerar oportunidades de emprego
+                      para todas as gerações, no início ou na ressignificação
+                      de carreira, com foco em diversidade e equidade. Numa
+                      profissão que fomente o bem-estar físico e mental,
+                      permitindo o equilíbrio entre a vida profissional e
+                      pessoal, através do trabalho remoto, com flexibilidade
+                      de horários, além de ser um negócio sustentável e
+                      responsável, socialmente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <main>
+        <section class="container-xl mt-5">
+            <h2>Cadastro Colaborador</h2>
+            <h5 class="mb-4">Insira as informações abaixo:</h5>
+            <form class="row g-3 needs-validation was-validated" novalidate>
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" minlength="5" required>
+                    <div class="valid-feedback">Nome ok!</div>
+                    <div class="invalid-feedback">Preencha o nome corretamente.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Insira um email válido.</div>
+                        <div class="valid-feedback">Email ok!</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="tel" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="tel" minlength="11" required
+                        placeholder="(00) 00000-0000">
+                    <div class="valid-feedback">
+                        Telefone ok!
+                    </div>
+                    <div class="invalid-feedback">Insira um telefone válido.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="espec" class="form-label">Especialidade</label>
+                    <select class="form-select" id="espec" required>
+                        <option selected disabled value="">Selecione Uma Especialidade</option>
+                        <option value="1">Desenvolvedor Front-End</option>
+                        <option value="2">Desenvolvedor Back-End</option>
+                        <option value="3">Desenvolvedor Mobile</option>
+                        <option value="4">UX Designer</option>
+                        <option value="5">Outras</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Selecione uma Opção
+                    </div>
+                    <div class="valid-feedback">
+                        Especialidade ok!
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="comentario" class="form-label">Comentário</label>
+                    <textarea type="text" class="form-control" id="comentario" required minlength="30"
+                        placeholder="Comentário pessoal sobre o porquê de estar se tornando colaborador"></textarea>
+                    <div class="invalid-feedback">Mínimo 30 Caracteres</div>
+                </div>
+
+
+                <div class="col-12 mb-5">
+                    <button id="botaoEnviar" class="botao-primary" type="button">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="modal fade" id="alertaCadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro Efetuado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">Solicitação de cadastro enviada com sucesso!</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+        class="modal fade"
+        id="erroCaptcha"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" id="erroCaptcha">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Erro de Capctha</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Resultado da soma incorreto!</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Início</h5>
+                    <ul>
+                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="">SoulCode</a></li>
+                        <li><a href="">Cadastro de Colaborador</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Serviços</h5>
+                    <ul>
+                        <li><a href="">Aplicativo</a></li>
+                        <li><a href="">E-bank</a></li>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Parceiros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Recuperar Senha</a></li>
+                        <li><a href="">Privacidade e Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">
+                        <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Copyright - Soulcode Academy</p>
+        </div>
+    </footer>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    
+    <script src="./js/cadastroColaborador.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

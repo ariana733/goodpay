@@ -4,8 +4,8 @@
  */
 import usuarios from "./moduloDados.js";
 
-const btnEntrar = document.getElementById("btnEntrar");
-const alertaLogin = new bootstrap.Modal("#alertaLogin");
+
+const btnEntrar = document.getElementById("btnEntrar")
 
 const alertaCaptcha = new bootstrap.Modal("#erroCaptcha");
 const spanCaptcha = document.getElementById("captcha");
@@ -59,6 +59,12 @@ function geradorNumeros() {
   return captcha;
 }
 
+const btnRecuperar = document.getElementById('btnRecuperar')
+
+btnRecuperar.addEventListener('click', () => {
+    window.location.pathname = '/recuperacaoDeSenha.html'
+})
+
 // ------------------ Geolocation services ----------------------//
 
 const toastTrigger = document.getElementById('liveToastBtn')
@@ -88,6 +94,3 @@ function geolocalizacao() {
     };
   }
 }
-
-
-
