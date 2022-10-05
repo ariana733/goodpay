@@ -1,0 +1,14 @@
+.botao-primary{
+    background-color: #4bd86e;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    padding: 8px;
+}
+
+.botao-primary:hover{
+    opacity: 80%;
+}
+
